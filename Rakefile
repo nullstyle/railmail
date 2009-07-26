@@ -5,11 +5,13 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "railmail"
-    gem.summary = %Q{TODO}
+    gem.summary = %Q{Provides a mock actionmailer with a web interface}
     gem.email = "nullstyle@gmail.com"
     gem.homepage = "http://github.com/nullstyle/railmail"
     gem.authors = ["Scott Fleckenstein"]
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+    gem.files += Dir['{app,generators,rails,lib}/**/*']
+    
   end
 
 rescue LoadError
