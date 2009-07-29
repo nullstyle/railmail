@@ -1,4 +1,4 @@
-class RailmailController < ApplicationController
+class RailmailController < ActionController::Base
   layout 'railmail'
   before_filter :load_delivery, :except => [:index, :styles, :javascripts]
   
